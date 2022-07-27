@@ -1,0 +1,540 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+/* =========================== Hero Section ========================= */
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    background-image: url('img/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    padding: 5rem;
+    /* vertical-align: middle; */
+}
+.hero .hero-image{
+    width: 24rem;
+    height: 12rem;
+}
+.hero .hero-image img{
+    height: 100%;
+    width: 100%;
+}
+.hero .hero-text{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    color: #fff;
+    padding: 3rem 10rem;
+}
+.hero .hero-text .h-first{
+    font-size: 10rem;
+    font-weight: 750;
+    color: #f15048;
+    font-family: 'Roboto Slab';
+}
+.hero .hero-text .h-seccond{
+    font-size: 8rem;
+    font-weight: 700;
+    color: #fff;
+    font-family: 'Roboto Slab';
+}
+.hero .hero-text .hero-desc{
+    font-style: italic;
+    font-size: 1.6rem;
+    width: 50%;
+    text-align: right;
+    margin-bottom: 4rem;
+    line-height: 1.8;
+}
+.buy-hp{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: white;
+    padding: 1.5rem 3rem;
+    background-color: #f15048;
+    border: 2px solid #f15048;
+    border-radius: 5rem;
+    transition: .3s ease;
+    margin-bottom: 4rem;
+}
+.buy-hp:hover{
+    background-color: transparent;
+}
+
+/* =========================== Product Informations ========================= */
+
+.product-info, .apple-chip{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+}
+.section-text{
+    width: 50%;
+    padding-top: 15rem;
+    padding-left: 15rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
+}
+.sc-text-main-heading{
+    font-size: 5rem;
+    color: black;
+    font-weight: 700;
+    font-family: 'Roboto Slab';
+}
+.sc-text-subheading{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 2rem;
+    font-weight: 100;
+}
+.sc-text-desc{
+    font-size: 1.7rem;
+    font-style: italic;
+    color: rgb(58, 58, 58);
+    line-height: 1.7;
+}
+.sc-text-link:hover{
+    background-color: transparent;
+    color: #f15048;
+}
+.section-img{
+    width: 50%;
+    /* margin-top: -4%; */
+    position: relative;
+}
+.section-img img{
+    width: 90%;
+    position: absolute;
+    top: -8%;
+}
+
+/* =========================== Apple ========================= */
+
+.apple-chip{
+    margin-bottom: 7rem;
+}
+
+.section-apple-img{
+    width: 45%;
+    height: auto;
+    background-image: url('img/apple-section-img.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100%;
+}
+
+/* =========================== Youtube video ========================= */
+
+.youtube-video{
+    width: 100%;
+    height: 50rem;
+}
+.youtube-video iframe{
+    width: 100%;
+    height: 100%;
+}
+
+/* =========================== Feel Your Music ========================= */
+
+.feel-your-music{
+    display: flex;
+    justify-content: flex-end;
+    padding: 3rem 10rem;
+    background-image: url('img/feel-your-music.png');
+    background-repeat: no-repeat;
+    /* min-height: 60rem; */
+    background-position: 65% 35%;
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+}
+.feel-your-music .feel-text{
+    width: 50%;
+    display: flex;
+    align-items: flex-end;
+    text-align: right;
+    height: 100%;
+}
+
+/* =========================== Color Cards ========================= */
+
+.colors{
+    display: flex;
+    flex-direction: column;
+    gap: 7rem;
+    margin-bottom: 7rem;
+}
+.section-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+.section-heading h2{
+    font-size: 5rem;
+    font-family: 'Roboto Slab';
+}
+.section-heading h3{
+    font-size: 2rem;
+    letter-spacing: 2px;
+    font-weight: 100;
+}
+
+.color-cards-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.color-cards-wrapper .card-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.color-cards-wrapper .card-text .name{
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    text-align: center;
+    font-weight: 300;
+    color: rgb(58, 58, 58);
+}
+.color-cards-wrapper .card-text .price{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+/* =========================== What is in the box ========================= */
+
+.whats-in-the-box{
+    width: 100%;
+    padding: 3rem 5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.whats-in-the-box .box-image{
+    width: 50%;
+    height: 100%;
+}
+.whats-in-the-box .box-image img{
+    width: 100%;
+}
+.whats-in-the-box .box-text{
+    padding-left: 2rem;
+    padding-top: 7rem;
+    width: 50%;
+}
+.italic-list{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.italic-list li{
+    font-size: 1.7rem;
+    font-style: italic;
+    color: rgb(58, 58, 58);
+    line-height: 1.7;
+}
+
+/* =========================== Photos ========================= */
+
+.photos{
+    height: 80rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.photo-left{
+    background-image: url('img/photo-sc-photo1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 50%;
+}
+.photos-right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.photos-right .photo-right-one{
+    height: 50%;
+    width: 100%;
+    background-image: url('img/photo-sc-photo2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.photos-right .photo-right-two{
+    height: 50%;
+    width: 100%;
+    background-image: url('img/photo-sc-photo3.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* =========================== Tech Specs ========================= */
+
+.tech-specs{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 4rem;
+    gap: 2rem;
+    /* flex-wrap: wrap; */
+}
+.tech-photo{
+    width: 30%;
+    padding-top: 6rem;
+    padding-left: 6rem;
+}
+.tech-photo img{
+    width: 100%;
+}
+.tech-text{
+    width: 70%;
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.tech-text .tech-heading{
+    font-size: 5rem;
+    color: black;
+    font-weight: 700;
+    font-family: 'Roboto Slab';
+}
+.lists{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 1rem;
+}
+.lists .list{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 50%;
+    padding: 1rem;
+}
+.list-tech{
+    padding-left: 2rem;
+}
+
+/* =========================== Footer ========================= */
+
+.footer{
+    height: 8rem;
+    color: #ffffff;
+    background-color: #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer span{
+    font-size: 1.4rem;
+}
+
+
+/* =========================== Media ========================= */
+
+@media only screen and (max-width: 1300px){
+    .feel-your-music .feel-text{
+        width: 70%;
+    }
+    .feel-your-music{
+        background-position: 80% 20%;
+    }
+    html{
+        font-size: 55%;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    html{
+        font-size: 50%;
+    }
+    .section-img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .section-img img{
+        width: 85%;
+        top: 30%;
+    }
+    .apple-chip{
+        flex-direction: column;
+        width: 100%;
+    }
+    .section-text{
+        width: 100%;
+    }
+    .section-apple-img{
+        width: 100%;
+        height: 50rem;
+    }
+    .feel-your-music{
+        background-position: 80% 20%;
+    }
+
+    .tech-specs{
+        flex-direction: column;
+    }
+    .tech-specs .tech-photo{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .tech-specs .tech-photo img{
+        width: 65%;
+    }
+    .tech-specs .tech-text{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    /* html{
+        font-size: 43%;
+    } */
+    .product-info{
+        flex-direction: column;
+        position: static;
+    }
+    .section-img{
+        width: 100%;
+    }
+    .section-img img{
+        width: 70%;
+        position: static;
+    }
+    .section-text{
+        padding: 4rem;
+        padding-bottom: 2rem;
+        width: 100%;
+    }
+
+    .feel-your-music .feel-text{
+        width: 70%;
+        text-align: center;
+    }
+    .sc-text-subheading{
+        width: 100%;
+        text-align: center;
+    }
+    .sc-text-main-heading{
+        width: 100%;
+        text-align: center;
+    }
+    .whats-in-the-box{
+        flex-direction: column;
+    }
+    .whats-in-the-box .box-image{
+        width: 100%;
+    }
+    .whats-in-the-box .box-text{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .whats-in-the-box .box-image{
+        display: flex;
+        justify-content: center;
+    }
+    .whats-in-the-box .box-image img{
+        width: 70%;
+    }
+    .photos{
+        flex-direction: column;
+        height: 180rem;
+    }
+    .photos .photo-left{
+        width: 100%;
+    }
+    .photos .photos-right{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .hero .hero-text{
+        width: 100%;
+        align-items: center;
+    }
+    .hero .hero-text .hero-desc{
+        width: 100%;
+        text-align: center;
+    }
+    .feel-your-music .feel-text{
+        width: 85%;
+    }
+    .whats-in-the-box .box-image img{
+        width: 90%;
+    }
+    .photos{
+        flex-direction: column;
+        height: 120rem;
+    }
+    .lists{
+        flex-direction: column;
+    }
+    .lists .list{
+        width: 100%;
+    }
+    .feel-your-music .feel-text{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding: 0rem 3.5rem;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .photos{
+        flex-direction: column;
+        height: 80rem;
+    }
+    .feel-your-music .feel-text{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+    .feel-your-music .feel-text .sc-text-desc{
+        width: 100%;
+        line-height: 1.2;
+    }
+    .tech-text .tech-heading{
+        text-align: center;
+    }
+}
